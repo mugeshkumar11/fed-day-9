@@ -421,17 +421,17 @@
     background-color: #428bca;
 }
 
-.team-flex {
+.teamflex {
     display: flex;
     flex-wrap: wrap;
 }
 
-.team-flex .teambox {
+.teambox {
     width: 25%;
-    height: 300px;
-    padding-right: 15px;
+    height: 400px;
+    background-color:#fff;
+    padding-left: 15px;
     box-sizing: border-box;
-    background-color:#2196f3;
 }
 .teamhead h2{
     display: flex;
@@ -449,7 +449,67 @@
     padding-bottom: 20px;
     color: #444444;
 }
+.teaminfo{
+    position: relative;
+}
+.teaminfo .teampic{
+    overflow: hidden;
+    border-radius: 4px;
+}
+.teaminfo .teampic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+}
+.teampic:hover img{
+    transition: all 0.3s ease;
+}
 
+
+.teamcontent{
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.41);
+    padding: 15px 0px ;
+    text-align: center;
+    border-radius: 4px;
+    color: #444444;
+}
+.teamcontent h5{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+
+}
+.teamcontent .hrline{
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    margin: 8px auto;
+    margin-bottom: 10px;
+    
+}
+.teamcontent p{
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+.icons a:hover{
+    color: #428bca;
+}
+.icons a .icofont-instagram{
+    margin-right: 3px;
+}
 
 .faq-flex {
     display: flex;
